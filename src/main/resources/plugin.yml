@@ -1,0 +1,12 @@
+name: GrittyBusiness
+version: ${version}
+description:
+  - Lets TNT pulverise Stone through Cobbles and Gravel into Sand.
+  - Also makes Composters a little dirtier.
+
+author: Minothor
+
+main: io.github.minothor.GrittyBusiness.GrittyBusiness
+api-version: ${spigot.api.version}
+load: STARTUP
+database: false

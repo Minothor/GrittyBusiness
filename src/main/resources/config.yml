@@ -1,0 +1,9 @@
+# default config.yml
+Config_Version: ${gritty.config.version}
+TNT_Rules:
+  SANDSTONE:
+    SAND: 0.7
+  GRAVEL:
+    SAND: 0.4
+  COBBLESTONE:
+    GRAVEL: 0.5
