@@ -37,19 +37,16 @@ public class TNTListener implements Listener {
 
 
     private static Block checkList(Float randomVal, Block block) {
-
         GrittyBusiness.logger.info("Block Check Triggered...");
 
         Material oldBlock = block.getType();
 
         GrittyBusiness.logger.info(String.format("Block Check for: %s", oldBlock.name()));
 
-        Map<Material, Float> replacement = blockReplacement.get(oldBlock);
-
-        GrittyBusiness.logger.info(String.format("Found Replacement", replacement.toString()));
+        Map<Material, Float> replacement = blockReplacement.getOrDefault(oldBlock,null);
 
         if(Objects.nonNull(replacement)) {
-            GrittyBusiness.logger.info("Found Block Replacement...");
+            GrittyBusiness.logger.info(String.format("Found Replacement", replacement.toString()));
             replacement.keySet().forEach(possibleBlock -> {
                 GrittyBusiness.logger.info(String.format("Found Block Replacement: %s", possibleBlock.name()));
 
@@ -68,7 +65,7 @@ public class TNTListener implements Listener {
         return block;
     }
 
-    @EventHandler(priority = EventPriority.LOW)
+    @EventHandler(priority = EventPriority.LOWEST)
     public void onEntityExplode(EntityExplodeEvent event) {
         GrittyBusiness.logger.info("Explosion Check Triggered...");
         Float[] randomVals = new Float[8];
