@@ -7,3 +7,14 @@ TNT_Rules:
     SAND: 0.4
   COBBLESTONE:
     GRAVEL: 0.5
+Sluice_Rules:
+  SAND:
+    CLAY_BALL: 0.4
+    REDSTONE: 0.2
+    GOLD_NUGGET: 0.04
+  GRAVEL:
+    CLAY_BALL: 0.7
+    IRON_NUGGET: 0.1
+  COBBLESTONE:
+    GRAVEL: 0.2
+    QUARTZ: 0.001

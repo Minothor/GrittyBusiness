@@ -2,7 +2,7 @@ name: GrittyBusiness
 version: ${version}
 description:
   - Lets TNT pulverise Stone through Cobbles and Gravel into Sand.
-  - Also makes Composters a little dirtier.
+  - Upcoming - sluices for Sifting particulates
 
 author: Minothor
 

@@ -24,13 +24,11 @@ to shatter into smaller particles:
 All of this is configurable, down to which block turns into which other block
 and at what chance.
 
-### Dirt
-Dig it out of the Composter, Compost is dirty stuff, but if you want to get good
-fresh dirt, you're going to have to rummage around in there, emptying it with a
-hopper won't do.
+### Sluices
+Sometimes, breaking apart rock is all you need to find trace minerals trapped within.
+
+A sluice will help wash the freed resources out of the grit. 
 
 ## What's Next?
 * More configuration options
-* Automatable Dirt
-* More flexibility with Composters (ever try composting meat? It's not pretty!)
-* Some way to make renewable clay (suggestions welcome!)
+* Automatable Sluices
